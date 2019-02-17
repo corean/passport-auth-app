@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "6f82fbec-615f-45ed-809e-13e157dafe4a",
+		"name": "Passport Auth ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/register?name=corean&password=cor6858&email=corean@corean.biz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "corean"
+						},
+						{
+							"key": "password",
+							"value": "cor6858"
+						},
+						{
+							"key": "email",
+							"value": "corean@corean.biz"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/login?password=cor6858&email=corean@corean.biz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					],
+					"query": [
+						{
+							"key": "password",
+							"value": "cor6858"
+						},
+						{
+							"key": "email",
+							"value": "corean@corean.biz"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImU1MmZlNDZhMjllYjk5NWEzNWJkYTg3NDRlNzUzNTVkYTA5ZWI4ZmFhM2FmMmE5MTAxYzBkNmJhYmQ4OGI3NDliMDg0YjkxNWUyMDFjNDM4In0.eyJhdWQiOiIxIiwianRpIjoiZTUyZmU0NmEyOWViOTk1YTM1YmRhODc0NGU3NTM1NWRhMDllYjhmYWEzYWYyYTkxMDFjMGQ2YmFiZDg4Yjc0OWIwODRiOTE1ZTIwMWM0MzgiLCJpYXQiOjE1NTAzODUyNDksIm5iZiI6MTU1MDM4NTI0OSwiZXhwIjoxNTgxOTIxMjQ5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.EfHBZ9uXBVoe7AO9GoVqFgd68oOiND6IXiKrO50YxEjb3NOAo1rh6lq1vwfM1-8ynapO7UE7g0x348O2EJTD9DP1Sp7St3h_wY_gGd3O42NYK1ksTGzNThzBINgL7ybb_T2twSgVycLMHM76XTjG2T1TQ8Jl0U6lru10U1aAQrs0VvgOOLBSBXJ8p0bWOj5NP5ZjQ967D8cOufizqsMQQhd1XwerRNI3e0RIRso3lfCEJK7MlsJ2glxcFu9ckblLtSYKRFJ-9GEjBK88FftJ37v0xATbXCdiTtk4RPMEgZDjoj9wl8KciT7B7SyKl0SdOE0ii3i5hMJ-Rg9sayrODa7dwH-0DSSnNhlNTttZQEPPKdlMUruL6TnEy8nwwx-w9q5e1I5y8xNDR2bpR6m5Qo3FKYNRwDGKZxqAv4Z0S9_dlXtDue5ieTvYI9QYIL4RLsW8ZPGzrcL38Ho9SltOeMN37ONoxdu5Ws-FzKHYFO9oN6XZD-UJygpMpDUYU32V0JTGfEw22f51t5NsrKjPqhkybG3W9PxUhtzXmjnBEo-y0i6fwsWjyWhLc4jjIAGF8Htjy1H49ugF1x23hcvhrTHHTNAWA25oZ_h4BlUQXxjJy1TF7ptcNmw8cCTtxrm-B8CUlEskXixjhQPrqhWXg9OXG_dp_p36KEgihKRpSyc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

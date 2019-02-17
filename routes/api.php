@@ -25,3 +25,8 @@ Route::group([
         Route::get('user', 'Auth\AuthController@user');
     });
 });
+
+Route::fallback(function(){
+    return response()->json([
+        'message' => 'Page Not Found. If error persists, contact info@website.com'], 404);
+});
